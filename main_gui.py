@@ -87,5 +87,5 @@ tree.pack()
 # o1 = Entry(win)
 # o1.grid(row=0, column=1)
 
-
-win.mainloop()
+if __name__ == "__main__":
+     win.mainloop()

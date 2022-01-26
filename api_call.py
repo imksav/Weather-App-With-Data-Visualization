@@ -89,7 +89,7 @@ for city in cities:
             database.insert_into_table(conn, sql_query, values)
 
 if __name__ == "__main__":
-      # search_general_info = database.select_from_table(conn, "SELECT * FROM general_info")
+      search_general_info = database.select_from_table(conn, "SELECT * FROM general_info")
       # print(search_general_info)
       # myfunc("SELECT * FROM general_info")
       pass

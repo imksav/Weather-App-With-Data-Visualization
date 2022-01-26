@@ -5,7 +5,7 @@ import tkinter as tk
 root = tk.Tk()
 root.geometry("650x650")
 root.resizable(False, False)
-root.iconbitmap("icon/weathericon.ico")
+# root.iconbitmap("icon/weathericon.ico")
 root.title(" Data visualization ")
 # creating frame
 

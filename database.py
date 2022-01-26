@@ -1,5 +1,4 @@
 import mysql.connector
-import main_gui
 
 
 def connection():
