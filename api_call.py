@@ -1,7 +1,8 @@
 import database
 import requests
+import main_gui
 
-cities = ['Ilam', 'Kathmandu', 'Ithari']
+cities = ['Butwal', 'Kathmandu', 'Pokhara', 'Jhapa', 'Baglung', 'Bhaktapur', 'Lalitpur']
 
 weather_dict = {}
 
@@ -87,8 +88,36 @@ for city in cities:
                       hourly_humidity, hourly_cloud, hourly_wind_kph, isday)
             database.insert_into_table(conn, sql_query, values)
 
-# print(weather_dict["Butwal"])
+if __name__ == "__main__":
+      # search_general_info = database.select_from_table(conn, "SELECT * FROM general_info")
+      # print(search_general_info)
+      # myfunc("SELECT * FROM general_info")
+      pass
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# ====================================================================================
+# print(weather_dict["Butwal"])
+"""
     print(weather_dict[city]['location']['name'])
     print(weather_dict[city]['location']['lat'])
     print(weather_dict[city]['location']['lon'])
@@ -137,3 +166,4 @@ for city in cities:
             print(weather_dict[city]['forecast']
                   ['forecastday'][i]['hour'][j]['is_day'])
             # print(weather_dict[city])
+"""
